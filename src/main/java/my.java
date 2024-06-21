@@ -10,10 +10,16 @@ public class my {
 	    System.setProperty("webdriver.gecko.driver", "C:\\Users\\HP\\Downloads\\Selenium\\Browser drivers\\geckodriver.exe");
 //	        
 	        // Initialize the FirefoxDriver
-  WebDriver driver = new FirefoxDriver();
+  WebDriver driverobj = new FirefoxDriver();
 //	        WebDriver driver = new EdgeDriver();
-	        driver.get("https://www.youtube.com/");
-	        
+  driverobj.get("https://www.youtube.com/");
+  
+  // store current url
+	        String obj=driverobj.getCurrentUrl();
+	        //print
+	        System.out.println(obj);
+	        String obj2=driverobj.getTitle();
+	        System.out.println(obj2);
 //	        // Open a website to test
 //	        
 //	        
